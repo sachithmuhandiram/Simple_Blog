@@ -1,0 +1,10 @@
+{% if all_authors %}
+	<h2>Author Names</h2>
+	<ul>
+		{% for author in all_authors %}
+			<li><a href="/test/{{author.id}}/">{{ author.name }}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<h1>There are not authors here</h1>
+{% endif %}
