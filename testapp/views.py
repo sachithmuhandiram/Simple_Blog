@@ -3,7 +3,6 @@ from django.http import HttpResponse
 #from django.template import loader # replaced by render
 from django.shortcuts import render
 from .models import Authors #importing models
-from articals.models import Articals
 
 
 # Create your views here.
