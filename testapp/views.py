@@ -23,19 +23,5 @@ def authors_details(request,authors_id):
 		raise Http404("That author is not availble here")
 	return render(request,'authors/author_detail.html',{'author_details':author_details})
 	
-	
 
-
-
-"""
-if not use templetes, use this
-def index(request):
-	all_authors = Authors.objects.all()		#getting all author details
-	html=''									#making an empty object
-	for author in all_authors:
-		url ='/test/' + str(author.id) +'/'		#creating url s for href
-		html +='<a href="' + url + '">'+author.name+ '</a><br>' #making href
-		
-	return HttpResponse(html) #returning the html view
-"""
 	
